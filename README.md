@@ -15,7 +15,7 @@ ShapeMaster is now open source and released under the MIT License. Please report
 
 ## Installation
 
-1. Download the latest installer from the [GitHub Pages site](https://enthali.github.io/ShapeMaster/setup.exe).
+1. Download the latest installer from the [GitHub Pages site](https://enthali.github.io/ShapeMaster).
 2. Run the installer.
 3. Open PowerPoint and check for the "Shape Master" tab in the ribbon.
 
@@ -66,7 +66,7 @@ The ShapeMaster project is organized as a VSTO (Visual Studio Tools for Office) 
 
 ## Contributing
 
-Contributions are welcome! Please open issues or submit pull requests via GitHub. For major changes, please open an issue first to discuss what you would like to change.
+We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines and [InstallForDevelopers.md](InstallForDevelopers.md) for developer setup instructions.
 
 ## License
 
