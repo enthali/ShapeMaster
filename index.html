@@ -1,56 +1,46 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>ShapeMaster PowerPoint Add-in</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-      body { font-family: Arial, sans-serif; margin: 2em; background: #f9f9f9; color: #222; }
-      .container { max-width: 700px; margin: auto; background: #fff; padding: 2em; border-radius: 8px; box-shadow: 0 2px 8px #0001; }
-      h1 { color: #2a4d8f; }
-      a.button { display: inline-block; margin: 1em 0; padding: 0.75em 1.5em; background: #2a4d8f; color: #fff; border-radius: 4px; text-decoration: none; font-weight: bold; }
-      a.button:hover { background: #18325b; }
-      code { background: #eee; padding: 2px 6px; border-radius: 3px; }
-    </style>
-  </head>
-  <body>
-    <nav style="width:100%; background:#2a4d8f; padding: 0.5em 0; box-shadow: 0 2px 8px #0002; position:fixed; top:0; left:0; z-index:1001;">
-      <div style="max-width: 700px; margin:auto; display:flex; gap:2em; align-items:center;">
-        <a href="index.html" style="color:#fff; text-decoration:none; font-weight:bold; font-size:1.1em;">Home</a>
-        <a href="user.html" style="color:#fff; text-decoration:none; font-weight:bold; font-size:1.1em;">Installation</a>
-        <a href="developer.html" style="color:#fff; text-decoration:none; font-weight:bold; font-size:1.1em;">Developer</a>
-      </div>
-    </nav>
-    <div class="container" style="margin-top:4.5em;">
-      <h1>ShapeMaster PowerPoint Add-in</h1>
-      <p><strong>ShapeMaster</strong> is an open source PowerPoint add-in that enhances shape manipulation, making it easy to resize, swap, and annotate shapes in your presentations.</p>
-      <h2>How to Install</h2>
-      <p>There are <strong>two ways</strong> to install ShapeMaster. Please read carefully and choose the option that fits your needs and experience level:</p>
-      <ol>
-        <li><strong>Developer/Secure Way</strong>: <br>
-          <em>For developers or security-conscious users.</em> <br>
-          <a class="button" href="developer.html">View Developer Instructions</a>
-        </li>
-        <li><strong>Trusting User Way</strong>: <br>
-          <em>For users who want a quick install and are willing to trust the provided files and certificate.</em> <br>
-          <a class="button" href="user.html">View User Installation Guide</a>
-        </li>
-      </ol>
-      <h2>Pros, Cons & Security Warning</h2>
-      <ul>
-        <li><strong>Developer Way:</strong> Most secure, but requires technical skills and tools.</li>
-        <li><strong>Trusting User Way:</strong> Easier, but requires trusting this website and the certificate.<br><span style="color: #b00; font-weight: bold;">Never trust a webserver blindly!</span></li>
-      </ul>
-      <h2>Project Links</h2>
-      <ul>
-        <li><a href="https://github.com/enthali/ShapeMaster">GitHub Repository</a></li>
-        <li><a href="https://github.com/enthali/ShapeMaster/blob/main/README.md">Read the Documentation</a></li>
-      </ul>
-      <h2>License & Privacy</h2>
-      <p>This project is licensed under the MIT License.<br>
-      ShapeMaster does not collect, transmit, or store any personal data.</p>
+<head>
+  <title>ShapeMaster PowerPoint Add-in</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2em; background: #f9f9f9; color: #222; }
+    .container { max-width: 700px; margin: auto; background: #fff; padding: 2em; border-radius: 8px; box-shadow: 0 2px 8px #0001; }
+    h1 { color: #2a4d8f; }
+    a.button { display: inline-block; margin: 1em 0; padding: 0.75em 1.5em; background: #2a4d8f; color: #fff; border-radius: 4px; text-decoration: none; font-weight: bold; }
+    a.button:hover { background: #18325b; }
+    code { background: #eee; padding: 2px 6px; border-radius: 3px; }
+  </style>
+  <script>
+    function loadContent(page) {
+      fetch(page)
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById('main-content').innerHTML = html;
+        });
+    }
+    window.onload = function() {
+      // Default to home.partial.html
+      loadContent('home.partial.html');
+    };
+  </script>
+</head>
+<body>
+  <nav style="width:100%; background:#2a4d8f; padding: 0.5em 0; box-shadow: 0 2px 8px #0002; position:fixed; top:0; left:0; z-index:1001;">
+    <div style="max-width: 700px; margin:auto; display:flex; gap:2em; align-items:center;">
+      <a href="#" onclick="loadContent('home.partial.html');return false;" style="color:#fff; text-decoration:none; font-weight:bold; font-size:1.1em;">Home</a>
+      <a href="#" onclick="loadContent('user.partial.html');return false;" style="color:#fff; text-decoration:none; font-weight:bold; font-size:1.1em;">Installation</a>
+      <a href="#" onclick="loadContent('developer.partial.html');return false;" style="color:#fff; text-decoration:none; font-weight:bold; font-size:1.1em;">Developer</a>
+      <a href="#" onclick="loadContent('documentation.partial.html');return false;" style="color:#fff; text-decoration:none; font-weight:bold; font-size:1.1em;">Documentation</a>
+      <a href="#" onclick="loadContent('impressum.partial.html');return false;" style="color:#fff; text-decoration:none; font-weight:bold; font-size:1.1em; margin-left:auto;">Impressum</a>
     </div>
-    <footer style="width:100%; background:#f9f9f9; border-top:1px solid #ddd; position:fixed; bottom:0; left:0; z-index:1001; text-align:left; padding:0.7em 2em;">
-      <a href="impressum.html" style="color:#2a4d8f; font-weight:bold; text-decoration:underline;">Impressum</a>
-    </footer>
-  </body>
+  </nav>
+  <div class="container" id="main-content" style="margin-top:4.5em;">
+    <!-- Content will be loaded here -->
+  </div>
+  <footer style="width:100%; background:#f9f9f9; border-top:1px solid #ddd; position:fixed; bottom:0; left:0; z-index:1001; text-align:left; padding:0.7em 2em;">
+    <span style="color:#2a4d8f; font-weight:bold;">ShapeMaster &copy; 2025</span>
+  </footer>
+</body>
 </html>
