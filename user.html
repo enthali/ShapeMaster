@@ -21,19 +21,24 @@
     </nav>
     <h1>User Installation (Trusting Way)</h1>
     <p>This method is for users who want a quick install and are willing to trust the provided certificate and setup file.</p>
-    <h2>Steps</h2>
+    <h2>Installation Steps</h2>
     <ol>
-      <li>Download and install the publisher certificate:<br>
+      <li>Download the publisher certificate:<br>
         <a class="button" href="ShapeMaster_Public.cer">Download Certificate</a>
-        <br>
-        <small>Double-click the certificate and install it to the <strong>Trusted Root Certification Authorities</strong> store for your user account.</small>
       </li>
+      <li>Double-click the <strong>ShapeMaster_Public.cer</strong> file.</li>
+      <li>Click <strong>“Install Certificate…”</strong>.</li>
+      <li>Choose <strong>“Local Machine”</strong> (or <strong>“Current User”</strong> if you don’t have admin rights).</li>
+      <li>Select <strong>“Place all certificates in the following store.”</strong></li>
+      <li>Click <strong>Browse</strong> and select <strong>“Trusted Root Certification Authorities.”</strong></li>
+      <li>Complete the wizard and confirm any security prompts.</li>
       <li>Download and run the installer:<br>
         <a class="button" href="setup.exe">Download ShapeMaster setup.exe</a>
       </li>
       <li>Follow the prompts to complete installation.</li>
       <li>Open PowerPoint and look for the <strong>Shape Master</strong> tab in the ribbon.</li>
     </ol>
+    <p>After installing the certificate, try running the installer again. The error should be resolved, and the add-in should install without trust warnings.</p>
     <h2>Pros</h2>
     <ul>
       <li>Quick and easy installation.</li>
