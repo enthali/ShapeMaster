@@ -71,3 +71,7 @@ Contributions are welcome! Please open issues or submit pull requests via GitHub
 ## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
+
+## Privacy
+
+ShapeMaster does not collect, transmit, or store any personal data or user information. All operations are performed locally within your PowerPoint environment.
