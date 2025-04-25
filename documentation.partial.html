@@ -5,7 +5,7 @@
   <li><strong>Resize Shapes:</strong> Match size, width, or height of multiple shapes to the first selected shape.</li>
   <li><strong>Swap Positions:</strong> Exchange the positions of two selected shapes with a single click.</li>
   <li><strong>Bold Text Coloring (Planned):</strong> Apply color to bold text within shapes, with color selection options.</li>
-  <li><strong>Notes Buttons:</strong> Quickly insert color-coded TODO, Review, or Comment notes as shapes on your slide. Each note type uses a distinct color and icon, defined in the ribbon XML.</li>
+  <li><strong>Notes Buttons:</strong> Quickly insert color-coded TODO, Review, or Comment notes as shapes on your slide. Each note type uses a distinct color and icon.</li>
 </ul>
 
 <h2>Usage</h2>
@@ -34,54 +34,10 @@
 </ol>
 
 <h3>Notes</h3>
-<div style="display:flex; gap:2em; align-items:center; margin-bottom:1em;">
-  <div style="text-align:center;">
-    <svg width="48" height="48" viewBox="0 0 48 48">
-      <polygon points="0,0 40,0 48,8 48,48 0,48" fill="#ffe066" stroke="#bfa600" stroke-width="2"/>
-    </svg>
-    <div style="font-size:0.9em; color:#bfa600;">TODO</div>
-  </div>
-  <div style="text-align:center;">
-    <svg width="48" height="48" viewBox="0 0 48 48">
-      <polygon points="0,0 40,0 48,8 48,48 0,48" fill="#ff6666" stroke="#b00" stroke-width="2"/>
-    </svg>
-    <div style="font-size:0.9em; color:#b00;">Review</div>
-  </div>
-  <div style="text-align:center;">
-    <svg width="48" height="48" viewBox="0 0 48 48">
-      <polygon points="0,0 40,0 48,8 48,48 0,48" fill="#66cc66" stroke="#217a21" stroke-width="2"/>
-    </svg>
-    <div style="font-size:0.9em; color:#217a21;">Comment</div>
-  </div>
-</div>
+
 <ol>
   <li>Use the TODO Note (yellow), Review Note (red), or Comment (green) Note buttons in the Shape Master ribbon group.</li>
   <li>Each button inserts a snipped-corner rectangle (sticky note style) at the top left of the slide.</li>
   <li>The note icon on the button matches the note color and displays a letter (T, R, or C) for TODO, Review, or Comment.</li>
 </ol>
 
-<h2>Technical Architecture</h2>
-<p>The ShapeMaster project is organized as a VSTO (Visual Studio Tools for Office) add-in written in C# targeting PowerPoint. Key components include:</p>
-<ol>
-  <li><strong>Ribbon Interface:</strong> Custom UI defined in XML and implemented in C# that extends PowerPoint's ribbon.</li>
-  <li><strong>Service Classes:</strong> Specialized classes for different functionality areas, located in the Services directory.</li>
-  <li><strong>Core Logic:</strong> Coordination in ThisAddIn.cs which delegates to appropriate service classes.</li>
-  <li><strong>Notification System:</strong> Non-modal tooltip notifications for user feedback.</li>
-</ol>
-
-<h3>Key Files</h3>
-<ul>
-  <li><strong>Services Directory:</strong> Contains service classes for different functionality groups
-    <ul>
-      <li><strong>ShapePositioningService.cs:</strong> Handles shape position operations</li>
-      <li><strong>TextFormattingService.cs:</strong> Handles text formatting operations</li>
-      <li><strong>ShapeResizingService.cs:</strong> Handles shape resizing operations</li>
-      <li><strong>NotificationService.cs:</strong> Centralizes user notifications</li>
-      <li><strong>RibbonUIService.cs:</strong> Manages ribbon UI interactions, including dynamic note button icons colored and labeled according to the XML tag</li>
-      <li><strong>ServiceManager.cs:</strong> Coordinates service dependencies</li>
-    </ul>
-  </li>
-  <li><strong>ShapeMasterRibbon.cs:</strong> Defines the ribbon UI callbacks and implements the IRibbonExtensibility interface</li>
-  <li><strong>ShapeMasterRibbon.xml:</strong> XML definition of the custom ribbon UI elements</li>
-  <li><strong>ThisAddIn.cs:</strong> Initialization and coordination between services</li>
-</ul>
