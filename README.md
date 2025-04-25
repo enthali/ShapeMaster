@@ -13,11 +13,25 @@ A PowerPoint add-in that enhances shape manipulation capabilities, providing use
 
 ShapeMaster is now open source and released under the MIT License. Please report any bugs or feature requests via GitHub issues.
 
-## Installation
+## Installation & Contribution
 
-1. Download the latest installer from the [GitHub Pages site](https://enthali.github.io/ShapeMaster).
-2. Run the installer.
-3. Open PowerPoint and check for the "Shape Master" tab in the ribbon.
+### For Trusting Users
+
+To install ShapeMaster, follow the instructions on the [GitHub Pages project site](https://enthali.github.io/ShapeMaster). After installation, open PowerPoint and check for the "Shape Master" tab in the ribbon.
+
+>**Security Notice:**
+>
+>If you see a security warning, it is because the add-in is signed with a self-signed certificate. Installing and trusting this certificate is not recommended unless you fully understand the risks and trust the source. 
+>
+>Proceed only if you are comfortable with these risks.
+
+### For Developers
+
+If you want to contribute or build ShapeMaster yourself:
+
+- See [InstallForDevelopers.md](InstallForDevelopers.md) for detailed developer setup and build instructions.
+- See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines and the pull request workflow.
+
 
 ## Usage
 
@@ -63,10 +77,6 @@ The ShapeMaster project is organized as a VSTO (Visual Studio Tools for Office) 
 - **ShapeMasterRibbon.xml**: XML definition of the custom ribbon UI elements
 - **ThisAddIn.cs**: Initialization and coordination between services
 
-
-## Contributing
-
-We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines and [InstallForDevelopers.md](InstallForDevelopers.md) for developer setup instructions.
 
 ## License
 
