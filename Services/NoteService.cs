@@ -31,12 +31,12 @@ namespace ShapeMaster.Services
                 var slide = _application.ActiveWindow.View.Slide;
                 float slideWidth = _application.ActivePresentation.PageSetup.SlideWidth;
                 float slideHeight = _application.ActivePresentation.PageSetup.SlideHeight;
-                float left = slideWidth * 0.10f;
-                float top = slideHeight * 0.10f;
-                float width = slideWidth * 0.25f;
+                float left = slideWidth * 0.05f;
+                float top = slideHeight * 0.05f;
+                float width = slideWidth * 0.20f;
                 float fontSize = 10f;
-                float paddingTop = 2f;
-                float paddingBottom = 2f;
+                float paddingTop = 3f;
+                float paddingBottom = 3f;
                 float height = fontSize + paddingTop + paddingBottom;
 
                 var shape = slide.Shapes.AddShape(

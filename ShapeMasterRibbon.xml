@@ -42,14 +42,14 @@
 							onAction="OnColorBoldTextClick"
 							getImage="GetColorBoldTextImage" />
 						<menu id="ColorBoldTextMenu" itemSize="normal">
+							<button id="theme_color_1" label="Text 1" tag="1" onAction="OnSimpleThemeColorSelected" getImage="GetThemeColorImage" showLabel="false" />
+							<button id="theme_color_2" label="Text 2" tag="2" onAction="OnSimpleThemeColorSelected" getImage="GetThemeColorImage" showLabel="false" />
 							<button id="theme_color_5" label="Accent 1" tag="5" onAction="OnSimpleThemeColorSelected" getImage="GetThemeColorImage" showLabel="false" />
 							<button id="theme_color_6" label="Accent 2" tag="6" onAction="OnSimpleThemeColorSelected" getImage="GetThemeColorImage" showLabel="false" />
 							<button id="theme_color_7" label="Accent 3" tag="7" onAction="OnSimpleThemeColorSelected" getImage="GetThemeColorImage" showLabel="false" />
 							<button id="theme_color_8" label="Accent 4" tag="8" onAction="OnSimpleThemeColorSelected" getImage="GetThemeColorImage" showLabel="false" />
 							<button id="theme_color_9" label="Accent 5" tag="9" onAction="OnSimpleThemeColorSelected" getImage="GetThemeColorImage" showLabel="false" />
 							<button id="theme_color_10" label="Accent 6" tag="10" onAction="OnSimpleThemeColorSelected" getImage="GetThemeColorImage" showLabel="false" />
-							<button id="theme_color_1" label="Text 1" tag="1" onAction="OnSimpleThemeColorSelected" getImage="GetThemeColorImage" showLabel="false" />
-							<button id="theme_color_2" label="Text 2" tag="2" onAction="OnSimpleThemeColorSelected" getImage="GetThemeColorImage" showLabel="false" />
 						</menu>
 				</splitButton>
 				</group>
