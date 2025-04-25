@@ -29,10 +29,10 @@
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <DefineConstants>VSTO40;UseOfficeInterop</DefineConstants>
     <ResolveComReferenceSilent>true</ResolveComReferenceSilent>
-    <IsWebBootstrapper>False</IsWebBootstrapper>
+    <IsWebBootstrapper>True</IsWebBootstrapper>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <PublishUrl>C:\Users\georgdoll\OneDrive - Microsoft\Publish\ShapeMaster\</PublishUrl>
-    <InstallUrl />
+    <PublishUrl>C:\workspace\VisualStudioProjects\ShapeMasterGhPages\</PublishUrl>
+    <InstallUrl>https://enthali.github.io/ShapeMaster/</InstallUrl>
     <TargetCulture>en</TargetCulture>
     <ApplicationVersion>1.0.0.10</ApplicationVersion>
     <AutoIncrementApplicationRevision>true</AutoIncrementApplicationRevision>
@@ -260,10 +260,11 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>ShapeMaster_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>BD393C615EF50232CCAF7BDF59F8E0EC87CA6032</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>1D1758218CF9488AA605696CD5DBFA733D926CE9</ManifestCertificateThumbprint>
   </PropertyGroup>
   <!-- Include the build rules for a C# project. -->
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
