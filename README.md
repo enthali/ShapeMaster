@@ -35,9 +35,11 @@ If you want to contribute or build ShapeMaster yourself:
 
 ## Usage
 
+
+
 ### Resizing Tools
 1. Select two or more shapes (the first shape will be the reference)
-2. Click the desired resize button (Match Size, Match Width, or Match Height)
+2. Click the desired resize button (Match Size, Match Width, or Match Height) or use the keyboard shortcuts
 
 ### Swapping Positions Tool
 1. Select exactly two shapes
@@ -54,6 +56,23 @@ If you want to contribute or build ShapeMaster yourself:
 1. Use the TODO Note, Review Note, or Comment Note buttons in the Shape Master ribbon group.
 2. Each button inserts a snipped-corner rectangle (sticky note style) at the top left of the slide
 3. The note icon on the button matches the note color and displays a letter (T, R, or C) for TODO, Review, or Comment.
+
+### Keyboard Shortcuts
+ShapeMaster supports keyboard navigation through the Office ribbon interface:
+
+1. Press **Alt** to show keyboard shortcuts
+2. Press **M** to navigate to the ShapeMaster tab
+3. Press the keytip for the specific command you want to use
+
+Common shortcuts:
+- Match Size: **Alt, M, MS**
+- Match Width: **Alt, M, MW** 
+- Match Height: **Alt, M, MH**
+- Swap Positions: **Alt, M, SP**
+- Apply Color to Bold Text: **Alt, M, BT**
+- Insert TODO Note: **Alt, M, TN**
+- Insert Review Note: **Alt, M, RN**
+- Insert Comment Note: **Alt, M, CN**
 
 ## Technical Architecture
 

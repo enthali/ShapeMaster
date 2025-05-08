@@ -34,7 +34,7 @@
     <PublishUrl>C:\workspace\VisualStudioProjects\ShapeMasterGhPages\</PublishUrl>
     <InstallUrl>https://enthali.github.io/ShapeMaster/</InstallUrl>
     <TargetCulture>en</TargetCulture>
-    <ApplicationVersion>1.0.0.12</ApplicationVersion>
+    <ApplicationVersion>1.0.0.13</ApplicationVersion>
     <AutoIncrementApplicationRevision>true</AutoIncrementApplicationRevision>
     <UpdateEnabled>true</UpdateEnabled>
     <UpdateInterval>0</UpdateInterval>

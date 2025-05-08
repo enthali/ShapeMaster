@@ -2,79 +2,86 @@
 <customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui" onLoad="Ribbon_Load">
 	<ribbon>
 		<tabs>
-			<tab id="ShapeMasterTab" label="Shape Master">
+			<tab id="ShapeMasterTab" label="Shape Master" keytip="M">
 				<group id="ShapeGroup" label="Shape Tools">
 					<button id="ResizeShapesButton"
-							label="Match Size"
-							screentip="Match Size of Selected Shapes"
-							supertip="Resizes all selected shapes to match the dimensions of the first selected shape."
-							size="large"
-							onAction="OnResizeButtonClick"
-							imageMso="SizeToFit" />
+					label="Match Size"
+					screentip="Match Size of Selected Shapes (Alt+M, MS)"
+					supertip="Resizes all selected shapes to match the dimensions of the first selected shape."
+					size="large"
+					onAction="OnResizeButtonClick"
+					imageMso="SizeToFit"
+					keytip="MS" />
 					<button id="ResizeWidthButton"
-							label="Match Width"
-							screentip="Match Width of Selected Shapes"
-							supertip="Resizes width of all selected shapes to match the width of the first selected shape."
-							onAction="OnResizeWidthButtonClick"
-							imageMso="ShapeWidth" />
+					label="Match Width"
+					screentip="Match Width of Selected Shapes (Alt+M, MW)"
+					supertip="Resizes width of all selected shapes to match the width of the first selected shape."
+					onAction="OnResizeWidthButtonClick"
+					imageMso="ShapeWidth"
+					keytip="MW" />
 					<button id="ResizeHeightButton"
-							label="Match Height"
-							screentip="Match Height of Selected Shapes"
-							supertip="Resizes height of all selected shapes to match the height of the first selected shape."
-							onAction="OnResizeHeightButtonClick"
-							imageMso="ShapeHeight" />
+					label="Match Height"
+					screentip="Match Height of Selected Shapes (Alt+M, MH)"
+					supertip="Resizes height of all selected shapes to match the height of the first selected shape."
+					onAction="OnResizeHeightButtonClick"
+					imageMso="ShapeHeight"
+					keytip="MH" />
 				</group>
 				<group id="PositioningGroup" label="Positioning">
 					<button id="SwapPositionsButton"
-							label="Swap Positions"
-							size="large"
-							getImage="GetSwapPositionsImage"
-							onAction="OnSwapPositionsButtonClick"
-							screentip="Swap Positions"
-							supertip="Swaps the positions of two selected shapes"/>
+					label="Swap Positions"
+					size="large"
+					getImage="GetSwapPositionsImage"
+					onAction="OnSwapPositionsButtonClick"
+					screentip="Swap Positions (Alt+M, SP)"
+					supertip="Swaps the positions of two selected shapes"
+					keytip="SP" />
 				</group>
 				<group id="TextGroup" label="Text Formatting">
-					<splitButton id="ColorBoldTextSplitButton" size="normal">
+					<splitButton id="ColorBoldTextSplitButton" size="normal" keytip="BT">
 						<button id="ColorBoldTextMainButton" 
-							label="Bold Text"
-							screentip="Apply Color to Bold Text"
-							supertip="Applies the current theme color to all bold text in the selected shapes."
-							onAction="OnColorBoldTextClick"
-							getImage="GetColorBoldTextImage" />
+						label="Bold Text"
+						screentip="Apply Color to Bold Text (Alt+M, BT)"
+						supertip="Applies the current theme color to all bold text in the selected shapes."
+						onAction="OnColorBoldTextClick"
+						getImage="GetColorBoldTextImage" />
 						<menu id="ColorBoldTextMenu" itemSize="normal">
-							<button id="theme_color_1" label="Text 1" tag="1" onAction="OnSimpleThemeColorSelected" getImage="GetThemeColorImage" showLabel="false" />
-							<button id="theme_color_2" label="Text 2" tag="2" onAction="OnSimpleThemeColorSelected" getImage="GetThemeColorImage" showLabel="false" />
-							<button id="theme_color_5" label="Accent 1" tag="5" onAction="OnSimpleThemeColorSelected" getImage="GetThemeColorImage" showLabel="false" />
-							<button id="theme_color_6" label="Accent 2" tag="6" onAction="OnSimpleThemeColorSelected" getImage="GetThemeColorImage" showLabel="false" />
-							<button id="theme_color_7" label="Accent 3" tag="7" onAction="OnSimpleThemeColorSelected" getImage="GetThemeColorImage" showLabel="false" />
-							<button id="theme_color_8" label="Accent 4" tag="8" onAction="OnSimpleThemeColorSelected" getImage="GetThemeColorImage" showLabel="false" />
-							<button id="theme_color_9" label="Accent 5" tag="9" onAction="OnSimpleThemeColorSelected" getImage="GetThemeColorImage" showLabel="false" />
-							<button id="theme_color_10" label="Accent 6" tag="10" onAction="OnSimpleThemeColorSelected" getImage="GetThemeColorImage" showLabel="false" />
+							<button id="theme_color_1" label="Text 1" tag="1" onAction="OnSimpleThemeColorSelected" getImage="GetThemeColorImage" showLabel="false" keytip="1" />
+							<button id="theme_color_2" label="Text 2" tag="2" onAction="OnSimpleThemeColorSelected" getImage="GetThemeColorImage" showLabel="false" keytip="2" />
+							<button id="theme_color_5" label="Accent 1" tag="5" onAction="OnSimpleThemeColorSelected" getImage="GetThemeColorImage" showLabel="false" keytip="3" />
+							<button id="theme_color_6" label="Accent 2" tag="6" onAction="OnSimpleThemeColorSelected" getImage="GetThemeColorImage" showLabel="false" keytip="4" />
+							<button id="theme_color_7" label="Accent 3" tag="7" onAction="OnSimpleThemeColorSelected" getImage="GetThemeColorImage" showLabel="false" keytip="5" />
+							<button id="theme_color_8" label="Accent 4" tag="8" onAction="OnSimpleThemeColorSelected" getImage="GetThemeColorImage" showLabel="false" keytip="6" />
+							<button id="theme_color_9" label="Accent 5" tag="9" onAction="OnSimpleThemeColorSelected" getImage="GetThemeColorImage" showLabel="false" keytip="7" />
+							<button id="theme_color_10" label="Accent 6" tag="10" onAction="OnSimpleThemeColorSelected" getImage="GetThemeColorImage" showLabel="false" keytip="8" />
 						</menu>
 				</splitButton>
 				</group>
 				<group id="NotesGroup" label="Notes">
 					<button id="TodoNoteButton"
-						label="TODO Note"
-						screentip="Insert a TODO Note"
-						supertip="Inserts a rectangle with a snipped corner, styled as a todo note, at the top left of the slide."
-						onAction="OnNoteButtonClick"
-						tag="#3fFFFF|TODO : "
-						getImage="GetNoteImage" />
+					label="TODO Note"
+					screentip="Insert a TODO Note (Alt+M, TN)"
+					supertip="Inserts a rectangle with a snipped corner, styled as a todo note, at the top left of the slide."
+					onAction="OnNoteButtonClick"
+					tag="#3fFFFF|TODO : "
+					getImage="GetNoteImage"
+					keytip="TN" />
 					<button id="ReviewNoteButton"
-						label="Review Note"
-						screentip="Insert a Review Note"
-						supertip="Inserts a rectangle styled as a review note."
-						onAction="OnNoteButtonClick"
-						tag="#3f3fFF|Review : "
-						getImage="GetNoteImage" />
+					label="Review Note"
+					screentip="Insert a Review Note (Alt+M, RN)"
+					supertip="Inserts a rectangle styled as a review note."
+					onAction="OnNoteButtonClick"
+					tag="#3f3fFF|Review : "
+					getImage="GetNoteImage"
+					keytip="RN" />
 					<button id="CommentNoteButton"
-						label="Comment Note"
-						screentip="Insert a Comment Note"
-						supertip="Inserts a rectangle styled as a comment note."
-						onAction="OnNoteButtonClick"
-						tag="#3fFF3f|Comment : "
-						getImage="GetNoteImage" />
+					label="Comment Note"
+					screentip="Insert a Comment Note (Alt+M, CN)"
+					supertip="Inserts a rectangle styled as a comment note."
+					onAction="OnNoteButtonClick"
+					tag="#3fFF3f|Comment : "
+					getImage="GetNoteImage"
+					keytip="CN" />
 				</group>
 			</tab>
 		</tabs>
