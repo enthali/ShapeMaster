@@ -31,8 +31,8 @@ namespace ShapeMaster.Services
                 var slide = _application.ActiveWindow.View.Slide;
                 float slideWidth = _application.ActivePresentation.PageSetup.SlideWidth;
                 float slideHeight = _application.ActivePresentation.PageSetup.SlideHeight;
-                float left = slideWidth * 0.05f;
-                float top = slideHeight * 0.05f;
+                float left = slideWidth * 0.02f;
+                float top = slideHeight * 0.02f;
                 float width = slideWidth * 0.20f;
                 float fontSize = 10f;
                 float paddingTop = 3f;
