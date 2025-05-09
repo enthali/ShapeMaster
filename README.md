@@ -2,6 +2,10 @@
 
 A PowerPoint add-in written in JavaScript that enhances shape manipulation capabilities, providing users with efficient tools for precise positioning and resizing of shapes within PowerPoint presentations.
 
+## Current Version
+
+**Build #1** (Mai 9, 2025)
+
 ## Features
 
 - **Resize Shapes**: Match size, width, or height of multiple shapes to the first selected shape.

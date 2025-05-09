@@ -8,9 +8,9 @@
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Shape Master JS"/>
   <Description DefaultValue="A PowerPoint add-in that enhances shape manipulation capabilities using JavaScript."/>
-  <IconUrl DefaultValue="assets/icons/icon-32.png"/>
-  <HighResolutionIconUrl DefaultValue="assets/icons/icon-80.png"/>
-  <SupportUrl DefaultValue="https://your-support-url.com"/>
+  <IconUrl DefaultValue="https://enthali.github.io/ShapeMaster/gh-pages/assets/icons/icon-32.png"/>
+  <HighResolutionIconUrl DefaultValue="https://enthali.github.io/ShapeMaster/gh-pages/assets/icons/icon-80.png"/>
+  <SupportUrl DefaultValue="https://github.com/enthali/ShapeMaster"/>
   
   <Hosts>
     <Host Name="Presentation"/>
@@ -24,7 +24,7 @@
   
   <FormSettings>
     <Form xsi:type="TaskPane">
-      <SourceLocation DefaultValue="https://localhost:3000/src/taskpane/taskpane.html"/>
+      <SourceLocation DefaultValue="https://enthali.github.io/ShapeMaster/gh-pages/src/taskpane/taskpane.html"/>
       <RequestedHeight>500</RequestedHeight>
     </Form>
   </FormSettings>
